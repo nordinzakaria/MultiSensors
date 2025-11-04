@@ -16,10 +16,16 @@ namespace MultiSensors
             Console.WriteLine("Blank base class constructor");
         }
 
+        // concrete method
         public void DisplayHardwareInfo()
         {
             Console.WriteLine($"{Id} {SerialNumber}");
         }
 
+        public abstract void Read();
+
+        public abstract void GetHigher();
+
+        public abstract float CalculateAverage();
     }
 }
